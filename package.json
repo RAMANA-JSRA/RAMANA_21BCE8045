@@ -1,0 +1,15 @@
+{
+  "name": "chess-like-game",
+  "version": "1.0.0",
+  "description": "An advanced chess-like game with WebSocket support.",
+  "scripts": {
+    "start": "npm-run-all --parallel server client",
+    "server": "node public/server/server.js",
+    "client": "http-server public/client -p 3000"
+  },
+  "dependencies": {
+    "ws": "^8.12.0",
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5"
+  }
+}

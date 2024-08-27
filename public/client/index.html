@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Advanced Chess-like Game</title>
+  </head>
+  <body>
+    <div id="game-container">
+      <h2>Advanced Chess-like Game</h2>
+      <div id="current-player">Current Player: A</div>
+      <div id="board"></div>
+      <div id="selected-character">No character selected</div>
+
+      <!-- Add buttons for movement directions -->
+      <div id="controls">
+        <button onclick="move('F')">Forward</button>
+        <button onclick="move('B')">Backward</button>
+        <button onclick="move('L')">Left</button>
+        <button onclick="move('R')">Right</button>
+      </div>
+
+      <div class="move-history">
+        <h3>Move History</h3>
+        <ul></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

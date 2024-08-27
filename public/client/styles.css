@@ -1,0 +1,106 @@
+styles.css body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #9a9292;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 5px;
+  margin: 20px auto; /* Center the board */
+}
+
+#board div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  background-color: #2d2d2d;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#board div.selected {
+  border: 2px solid yellow; /* Highlight the selected character */
+}
+
+#board div[data-player="A"] {
+  background-color: #ff6347; /* Tomato color for Player A */
+}
+
+#board div[data-player="B"] {
+  background-color: #4682b4; /* Steel blue color for Player B */
+}
+
+#board div[data-winner="A"] {
+  background-color: #32cd32; /* Lime green for winner A */
+}
+
+#board div[data-winner="B"] {
+  background-color: #ffa500; /* Orange for winner B */
+}
+
+#current-player {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.move-history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.move-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.move-history ul li {
+  margin: 5px 0;
+}
+
+.move-history ul li.captured {
+  color: red;
+  font-weight: bold;
+}
+
+#controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#controls button:hover {
+  background-color: #f8ebeb;
+}
