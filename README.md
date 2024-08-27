@@ -1,5 +1,9 @@
 # Turn-based Chess-like Game with WebSocket Communication
 
+# Screenshot 
+![chess](https://github.com/user-attachments/assets/f359fd01-3e7e-471a-b14e-b27b7e53addc)
+![moves](https://github.com/user-attachments/assets/db46d254-4c81-4373-9803-8d05709a5da6)
+
 ## Objective
 
 This project is a turn-based chess-like game with a server-client architecture, using WebSocket for real-time communication and a web-based user interface. The goal was to create a game that allows multiple players to connect and play in real-time, with game state synchronization between the server and all connected clients.
